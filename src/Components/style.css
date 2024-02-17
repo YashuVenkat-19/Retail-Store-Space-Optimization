@@ -1,0 +1,18 @@
+.img {
+    height: 600px;
+}
+
+.backgr {
+    position: relative;
+    background-image: url("../homeBg.jpg");
+    height: 400px;
+}
+
+.backgr::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: inherit;
+    backdrop-filter: blur(10px);
+    z-index: -1;
+}
